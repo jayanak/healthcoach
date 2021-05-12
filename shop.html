@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link href="template.css" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <title>Health Coach</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Health Coach</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/about.html">About Us</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="/services.html" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Personal Tanning Program</a></li>
+                            <li><a class="dropdown-item" href="#">Nutrition Plan</a></li>
+                            <li><a class="dropdown-item" href="#">Balance Body & Mind</a></li>
+                            <li><a class="dropdown-item" href="#">Fitness & Performance</a></li>
+                            <li><a class="dropdown-item" href="#">Female Fat Loss Program</a></li>
+                            <li><a class="dropdown-item" href="#">Male Fat Loss Program</a></li>
+                            <li><a class="dropdown-item" href="#">12 Week Muscle Building</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/shop.html">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact.html">Contact Us</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                <div class="mx-2 my-2">
+                    <button class="btn btn-danger" data-toggle="modal" data-target="#loginModal">Login</button>
+                    <button class="btn btn-danger" data-toggle="modal" data-target="#signupModal">SignUp</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Login</h5>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+                        <!-- <span aria-hidden="true">&times;</span> -->
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group my-4">
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="Enter email">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                                else.</small>
+
+                        </div>
+                        <div class="form-group my-4">
+
+                            <input type="password" class="form-control" id="exampleInputPassword1"
+                                placeholder="Password">
+                        </div>
+                        <button type="submit" class="btn btn-primary my-1">Submit</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Signup Modal -->
+    <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="signupModalLabel">Sign Up</h5>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+                        <!-- <span aria-hidden="true">&times;</span> -->
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group my-4">
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="Enter email">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                                else.</small>
+
+                        </div>
+                        <div class="form-group my-4">
+
+                            <input type="password" class="form-control" id="exampleInputPassword1"
+                                placeholder="Password">
+                            <br />
+                            <input type="password" class="form-control" id="exampleInputPassword1"
+                                placeholder="Confirm Password">
+                        </div>
+                        <button type="submit" class="btn btn-primary my-1">Submit</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-4">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="shop-grid-item">
+                        <div class="shop-item-thumb"><a href="#"><img src="https://source.unsplash.com/500x500/?walk"
+                                    alt=""></a>
+                            <div class="shop-item-hidden"><a class="btn btn-new-white" href="#">Add to cart</a></div>
+                        </div>
+                        <div class="shop-item-captions">
+                            <h6 class="shop-item-title">Classic Chair</h6><span class="shop-item-price">$20.00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="shop-grid-item">
+                        <div class="shop-item-thumb"><a href="#"><img src="https://source.unsplash.com/500x500/?runing"
+                                    alt=""></a>
+                            <div class="shop-item-hidden"><a class="btn btn-new-white" href="#">Add to cart</a></div>
+                        </div>
+                        <div class="shop-item-captions">
+                            <h6 class="shop-item-title">Thermo Flask</h6><span class="shop-item-price">$30.00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="shop-grid-item">
+                        <div class="shop-item-thumb"><a href="#"><img src="https://source.unsplash.com/500x500/?sea"
+                                    alt=""></a>
+                            <div class="shop-item-hidden"><a class="btn btn-new-white" href="#">Add to cart</a></div>
+                        </div>
+                        <div class="shop-item-captions">
+                            <h6 class="shop-item-title">Folder Calendar</h6><span class="shop-item-price">$50.00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="shop-grid-item">
+                        <div class="shop-item-thumb"><a href="#"><img src="https://source.unsplash.com/500x500/?land"
+                                    alt=""></a>
+                            <div class="shop-item-hidden"><a class="btn btn-new-white" href="#">Add to cart</a></div>
+                        </div>
+                        <div class="shop-item-captions">
+                            <h6 class="shop-item-title">Amber Body Lotion</h6><span
+                                class="shop-item-price">$80.00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="shop-grid-item">
+                        <div class="shop-item-thumb"><a href="#"><img
+                                    src="https://source.unsplash.com/500x500/?Instructor" alt=""></a>
+                            <div class="shop-item-hidden"><a class="btn btn-new-white" href="#">Add to cart</a></div>
+                        </div>
+                        <div class="shop-item-captions">
+                            <h6 class="shop-item-title">Solo Headphones</h6><span class="shop-item-price">$100.00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="shop-grid-item">
+                        <div class="shop-item-thumb"><a href="#"><img
+                                    src="https://source.unsplash.com/500x500/?dumbal, yoga, Instructor" alt=""></a>
+                            <div class="shop-item-hidden"><a class="btn btn-new-white" href="#">Add to cart</a></div>
+                        </div>
+                        <div class="shop-item-captions">
+                            <h6 class="shop-item-title">Ceramic Watch</h6><span class="shop-item-price">$20.00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="shop-grid-item">
+                        <div class="shop-item-thumb"><a href="#"><img
+                                    src="https://source.unsplash.com/500x500/?exercise, yoga, Instructor" alt=""></a>
+                            <div class="shop-item-hidden"><a class="btn btn-new-white" href="#">Add to cart</a></div>
+                        </div>
+                        <div class="shop-item-captions">
+                            <h6 class="shop-item-title">Wooden Bathroom Set</h6><span
+                                class="shop-item-price">$40.00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="shop-grid-item">
+                        <div class="shop-item-thumb"><a href="#"><img
+                                    src="https://source.unsplash.com/500x500/?exercise" alt=""></a>
+                            <div class="shop-item-hidden"><a class="btn btn-new-white" href="#">Add to cart</a></div>
+                        </div>
+                        <div class="shop-item-captions">
+                            <h6 class="shop-item-title">Plain Glass Bottle</h6><span
+                                class="shop-item-price">$40.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="space" data-my="40px" style="margin-top: 40px;"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer class="container footer">
+        <div class="footer-bar">
+            <p class="float-end"><a href="#">Back to top</a></p>
+            <p>© 2020–2021 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+        </div>
+    </footer>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script> -->
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    -->
+
+
+
+
+
+</body>
+
+</html>
